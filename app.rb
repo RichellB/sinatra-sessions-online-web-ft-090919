@@ -45,7 +45,7 @@ class App < Sinatra::Base
   end
 
   get '/fetch_session_id' do
-    session[:user_id] value:
+    session[:user_id] value:"#{session[:user_id]""
     "You did it! session[:user_id] value: #{session[:user_id]}.\nNow, clear the session in the '/logout' route.\nSee the readme for further instructions.\nThen, navigate to the '/logout' path."
   end
 
